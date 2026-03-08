@@ -1100,7 +1100,7 @@ function buildHistoricPortsLayer() {
     artWrap.innerHTML = `<div class="seaTint"></div><div class="waves"></div><div class="bathyDay"></div>`;
 
     const watercolor = L.tileLayer(
-      "https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg",
+      "https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg?api_key=ad2dff62-b9ab-4b60-a9ef-d91c975567ca",
       {
         maxZoom: 16,
         attribution: "&copy; Stadia Maps &copy; Stamen Design &copy; OpenStreetMap contributors"
@@ -1644,4 +1644,5 @@ function buildHistoricPortsLayer() {
       true
     );
   }
+
 })();

@@ -1,0 +1,2876 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-02-13T22:33:04Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/114444173",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "蘭嶼燈塔",
+        "name:en": "Lanyu Lighthouse",
+        "name:zh": "蘭嶼燈塔",
+        "seamark:information": "Obscured by high land of island.",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "4",
+        "seamark:light:height": "216",
+        "seamark:light:period": "24",
+        "seamark:light:range": "26",
+        "seamark:light:reference": "F 4725",
+        "seamark:light:sequence": "0.3+(3.7)+0.3+(3.7)+0.3+(3.7)+0.3+(11.7)",
+        "seamark:name": "Lan Yu",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "wikidata": "Q17036349",
+        "wikipedia": "zh:蘭嶼燈塔",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5030334,
+          22.0808766
+        ]
+      },
+      "id": "way/114444173"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260052654",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.0019315,
+          25.0075443
+        ]
+      },
+      "id": "way/260052654"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/286764100",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5800717,
+          24.3715493
+        ]
+      },
+      "id": "node/286764100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/310320724",
+        "building": "yes",
+        "ele": "56.4",
+        "man_made": "lighthouse",
+        "name": "鵝鑾鼻燈塔",
+        "name:en": "Eluanbi Lighthouse",
+        "name:sv": "Eluanbi fyr",
+        "name:zh": "鵝鑾鼻燈塔",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "wikidata": "Q5367908",
+        "wikipedia": "zh:鵝鑾鼻燈塔",
+        "wikipedia:en": "Eluanbi Lighthouse",
+        "wikipedia:zh": "鵝鑾鼻燈塔",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8526511,
+          21.9022448
+        ]
+      },
+      "id": "way/310320724"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/368549147",
+        "alt_name": "萬人堆鼻燈塔",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "基隆燈塔",
+        "name:en": "Keelung Lighthouse",
+        "name:zh": "基隆燈塔",
+        "seamark:light:1:character": "Mo",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:group": "A",
+        "seamark:light:1:period": "7",
+        "seamark:light:1:sector_end": "347",
+        "seamark:light:1:sector_start": "151",
+        "seamark:light:1:sequence": "0.5+(1.5),1+(4)",
+        "seamark:light:reference": "F 4674",
+        "seamark:name": "基隆燈塔(Wan-Jentui Pi.)",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "wikidata": "Q101096640",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7476298,
+          25.1553168
+        ]
+      },
+      "id": "way/368549147"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/429563816",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "三仙台燈塔",
+        "seamark:type": "light_major",
+        "source": "Maxar Premium",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4217681,
+          23.1263036
+        ]
+      },
+      "id": "way/429563816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/476662470",
+        "ele": "88.7m(自高潮面起算)",
+        "man_made": "lighthouse",
+        "name": "琉球嶼燈塔",
+        "name:en": "Liuchiu Yu Lighthouse",
+        "name:zh": "琉球嶼燈塔",
+        "name:zh-Hans": "琉球屿灯塔",
+        "name:zh-Hant": "琉球嶼燈塔",
+        "seamark:information": "Visible 226°-217°",
+        "seamark:light:character": "LFl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "89",
+        "seamark:light:period": "8",
+        "seamark:light:range": "14",
+        "seamark:light:reference": "F 4612",
+        "seamark:light:sequence": "2+(6)",
+        "seamark:light:visibility": "part_obscured",
+        "seamark:name": "Liu-ch'iu Hsu",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "wikidata": "Q15927776",
+        "wikipedia": "zh:琉球嶼燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3665068,
+          22.3288382
+        ]
+      },
+      "id": "node/476662470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/528425376",
+        "man_made": "lighthouse",
+        "name": "彭佳嶼燈塔",
+        "name:en": "Pengjia Lighthouse",
+        "name:nan": "Phênn-ka-sū Teng-thah",
+        "name:nan-Hant": "彭佳嶼燈塔",
+        "name:nan-Latn-pehoeji": "Phênn-ka-sū Teng-thah",
+        "name:nan-Latn-tailo": "Phênn-ka-sū Ting-thah",
+        "name:zh": "彭佳嶼燈塔",
+        "wikidata": "Q11069686",
+        "wikipedia": "zh:彭佳嶼燈塔",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.0802532,
+          25.6300689
+        ]
+      },
+      "id": "way/528425376"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/531151254",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "綠島燈塔",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4663287,
+          22.6765209
+        ]
+      },
+      "id": "way/531151254"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/680610765",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "問道堂",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4480785,
+          22.7538406
+        ]
+      },
+      "id": "way/680610765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/699477200",
+        "attraction": "lighthouse",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "奇萊鼻燈塔",
+        "reference": "US NGA Pub. 112. 2023; https://hl.twport.com.tw/chinese/cp.aspx",
+        "seamark:light:character": "Iso",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "38",
+        "seamark:light:period": "6",
+        "seamark:light:range": "16.6",
+        "seamark:light:reference": "NGA 13728",
+        "seamark:light:visibility": "part_obscured",
+        "seamark:name": "奇萊鼻燈塔",
+        "seamark:type": "light_major",
+        "wikidata": "Q5119929",
+        "wikipedia": "zh:奇萊鼻燈塔",
+        "wikipedia:zh": "奇萊鼻燈塔",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6438469,
+          24.0159598
+        ]
+      },
+      "id": "way/699477200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/708442772",
+        "building": "service",
+        "historic": "building",
+        "man_made": "lighthouse",
+        "name": "白沙岬燈塔",
+        "seamark:light:1:character": "Al.Fl",
+        "seamark:light:1:colour": "white;red",
+        "seamark:light:1:height": "37",
+        "seamark:light:1:period": "20",
+        "seamark:light:1:range": "26",
+        "seamark:light:1:sector_end": "235",
+        "seamark:light:1:sector_start": "55",
+        "seamark:light:1:sequence": "[W.]0.2+(9.8),[R.]0.2+(9.8)",
+        "seamark:light:reference": "F 4662",
+        "seamark:name": "Pai-sha-Chia",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "start_date": "1901-01",
+        "wikidata": "Q15914308",
+        "wikipedia": "zh:白沙岬燈塔",
+        "wikipedia:zh": "白沙岬燈塔",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0762898,
+          25.0413098
+        ]
+      },
+      "id": "way/708442772"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/761954108",
+        "alt_name": "漁翁島燈塔",
+        "alt_name:en": "Yuwengdao Lighthouse",
+        "alt_name:zh": "漁翁島燈塔",
+        "alt_name:zh-Hans": "渔翁岛灯塔",
+        "alt_name:zh-Hant": "漁翁島燈塔",
+        "man_made": "lighthouse",
+        "name": "西嶼燈塔",
+        "name:en": "Xiyu Lighthouse",
+        "name:zh": "西嶼燈塔",
+        "name:zh-Hans": "西屿灯塔",
+        "name:zh-Hant": "西嶼燈塔",
+        "seamark:fog_signal:category": "horn",
+        "seamark:fog_signal:group": "1",
+        "seamark:fog_signal:period": "30",
+        "seamark:fog_signal:range": "3",
+        "seamark:fog_signal:sequence": "3+(27)",
+        "seamark:information": "Partially obscured by islands",
+        "seamark:light:character": "LFl",
+        "seamark:light:colour": "white",
+        "seamark:light:exhibition": "night",
+        "seamark:light:group": "2",
+        "seamark:light:height": "60.7",
+        "seamark:light:period": "30",
+        "seamark:light:range": "25.1",
+        "seamark:light:reference": "F 4652",
+        "seamark:light:sequence": "1+(7)+1+(21)",
+        "seamark:name": "漁翁島燈塔",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "wikidata": "Q15903722",
+        "wikipedia": "zh:漁翁島燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4690827,
+          23.5625548
+        ]
+      },
+      "id": "node/761954108"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/765770921",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "球子山燈塔",
+        "wikidata": "Q17060311",
+        "wikipedia": "zh:球子山燈塔",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7438519,
+          25.1462235
+        ]
+      },
+      "id": "way/765770921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/861015560",
+        "man_made": "lighthouse",
+        "name": "鼻頭角燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.9235312,
+          25.1287245
+        ]
+      },
+      "id": "node/861015560"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/881020401",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "目斗嶼燈塔",
+        "name:zh": "目斗嶼燈塔",
+        "name:zh-Hans": "目斗屿灯塔",
+        "name:zh-Hant": "目斗嶼燈塔",
+        "operator": "交通部航港局",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.6004112,
+          23.7862777
+        ]
+      },
+      "id": "way/881020401"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/940950211",
+        "man_made": "lighthouse",
+        "name": "綠島燈塔",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "2",
+        "seamark:light:height": "48",
+        "seamark:light:period": "20",
+        "seamark:light:range": "26",
+        "seamark:light:reference": "F 4724",
+        "seamark:name": "Huo-shao Tao",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4663471,
+          22.6765213
+        ]
+      },
+      "id": "node/940950211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/954872181",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "七美嶼燈塔",
+        "name:en": "Qimei Lighthouse",
+        "name:zh": "七美嶼燈塔",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:group": "2",
+        "seamark:light:1:height": "41",
+        "seamark:light:1:period": "10",
+        "seamark:light:1:range": "11",
+        "seamark:light:1:sector_end": "158",
+        "seamark:light:1:sector_start": "228",
+        "seamark:light:1:sequence": "0.5+(1),0.5+(8)",
+        "seamark:light:reference": "F 4642",
+        "seamark:name": "Chi-mei Yu",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "wikidata": "Q10864721",
+        "wikipedia": "zh:七美嶼燈塔",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4281414,
+          23.1901605
+        ]
+      },
+      "id": "way/954872181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1055856262",
+        "building": "yes",
+        "height": "40",
+        "man_made": "lighthouse",
+        "name": "東吉嶼燈塔",
+        "name:en": "Dongjiyu Lighthouse",
+        "name:zh": "東吉嶼燈塔",
+        "name:zh-Hans": "东吉屿灯塔",
+        "name:zh-Hant": "東吉嶼燈塔",
+        "seamark:light:character": "LFl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "67.1",
+        "seamark:light:period": "12",
+        "seamark:light:range": "21.5",
+        "seamark:type": "light_minor",
+        "wikidata": "Q101096636",
+        "wikipedia": "zh:東吉嶼燈塔",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.6695116,
+          23.2613633
+        ]
+      },
+      "id": "way/1055856262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1129843956",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7568798,
+          25.1562117
+        ]
+      },
+      "id": "node/1129843956"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1138106436",
+        "addr:city": "連江縣",
+        "addr:country": "TW",
+        "addr:district": "莒光鄉",
+        "addr:full": "連江縣莒光鄉福正村56之1號",
+        "addr:housenumber": "56之1",
+        "addr:place": "福正村",
+        "addr:province": "福建省",
+        "alt_name": "東犬燈塔;東莒燈塔",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "東莒島燈塔",
+        "name:en": "Dongquan Lighthouse",
+        "name:nan": "Tong-khián teng-thah",
+        "name:nan-Hant": "東犬燈塔",
+        "name:nan-Latn-pehoeji": "Tong-khián teng-thah",
+        "name:nan-Latn-tailo": "Tong-khián ting-thah",
+        "name:zh": "東莒島燈塔",
+        "operator": "交通部航港局",
+        "seamark:type": "light_major",
+        "tourism": "attraction",
+        "wikidata": "Q17499085",
+        "wikipedia": "zh:東莒島燈塔",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.9857306,
+          25.9677319
+        ]
+      },
+      "id": "way/1138106436"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1169738162",
+        "man_made": "lighthouse",
+        "name": "南堤頭燈塔",
+        "seamark:information": "Auxiliary light F.R. 8m 5M on same structure.",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "21",
+        "seamark:light:period": "2",
+        "seamark:light:range": "14",
+        "seamark:light:reference": "F 4660.6",
+        "seamark:light:sequence": "0.1+(1.9)",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "F",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5006111,
+          24.2901667
+        ]
+      },
+      "id": "node/1169738162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1169738473",
+        "man_made": "lighthouse",
+        "name": "南內堤燈塔",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "13",
+        "seamark:light:period": "3",
+        "seamark:light:range": "10",
+        "seamark:light:reference": "F 4660.8",
+        "seamark:light:sequence": "0.5+(2.5)",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5118075,
+          24.2851223
+        ]
+      },
+      "id": "node/1169738473"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1169741793",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.516937,
+          24.2898955
+        ]
+      },
+      "id": "node/1169741793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1236235487",
+        "man_made": "lighthouse",
+        "seamark:light:character": "Iso",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "45.3",
+        "seamark:light:period": "3",
+        "seamark:light:range": "17",
+        "seamark:light:reference": "P 4629.24",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.1475033,
+          22.9625837
+        ]
+      },
+      "id": "node/1236235487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039115",
+        "man_made": "lighthouse",
+        "name": "蘇澳燈塔",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:height": "56",
+        "seamark:light:1:period": "7",
+        "seamark:light:1:range": "16",
+        "seamark:light:1:sector_end": "210",
+        "seamark:light:1:sector_start": "164",
+        "seamark:light:2:character": "Fl",
+        "seamark:light:2:colour": "red",
+        "seamark:light:2:height": "56",
+        "seamark:light:2:period": "7",
+        "seamark:light:2:range": "12",
+        "seamark:light:2:sector_end": "240",
+        "seamark:light:2:sector_start": "210",
+        "seamark:light:3:character": "Fl",
+        "seamark:light:3:colour": "white",
+        "seamark:light:3:height": "56",
+        "seamark:light:3:period": "7",
+        "seamark:light:3:sector_end": "300",
+        "seamark:light:3:sector_start": "240",
+        "seamark:light:reference": "F 4700",
+        "seamark:name": "Pei Chiao",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "G",
+        "seamark:radar_transponder:period": "75",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8846639,
+          24.5999616
+        ]
+      },
+      "id": "node/1271039115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039314",
+        "man_made": "lighthouse",
+        "name": "花蓮港紅燈塔",
+        "official_name": "東防波堤突堤末端燈桿",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "24",
+        "seamark:light:period": "3",
+        "seamark:light:range": "12",
+        "seamark:light:reference": "NGA 13748",
+        "seamark:light:sequence": "0.5+(2.5)",
+        "seamark:type": "light_minor",
+        "source": "https://hl.twport.com.tw/chinese/cp.aspx",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6280056,
+          23.9696345
+        ]
+      },
+      "id": "node/1271039314"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039486",
+        "man_made": "lighthouse",
+        "seamark:information": "N. mole marked by three 2 F.G. (vert.) 6M lights.",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:group": "3",
+        "seamark:light:height": "18",
+        "seamark:light:period": "10",
+        "seamark:light:range": "15",
+        "seamark:light:reference": "F 4624.4",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "Y",
+        "seamark:radar_transponder:period": "60",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3007657,
+          22.5511849
+        ]
+      },
+      "id": "node/1271039486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039565",
+        "man_made": "lighthouse",
+        "seamark:light:character": "Iso",
+        "seamark:light:colour": "green",
+        "seamark:light:exhibition": "night",
+        "seamark:light:height": "14.6",
+        "seamark:light:period": "4",
+        "seamark:light:range": "15.6",
+        "seamark:light:reference": "P 4620",
+        "seamark:light:sequence": "2+(2)",
+        "seamark:name": "高雄港北防波堤燈杆",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "G",
+        "seamark:radar_transponder:range": "15",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2023."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2568333,
+          22.6209167
+        ]
+      },
+      "id": "node/1271039565"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039635",
+        "man_made": "lighthouse",
+        "seamark:fixme": "please_fix_position",
+        "seamark:light:category": "leading;lower",
+        "seamark:light:character": "F",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "19",
+        "seamark:light:range": "8",
+        "seamark:light:reference": "F 4626",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2656713,
+          22.6967011
+        ]
+      },
+      "id": "node/1271039635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039636",
+        "man_made": "lighthouse",
+        "seamark:fixme": "please_fix_position",
+        "seamark:light:1:colour": "green",
+        "seamark:light:1:range": "3",
+        "seamark:light:1:sector_end": "103",
+        "seamark:light:1:sector_start": "103",
+        "seamark:light:category": "leading;upper",
+        "seamark:light:character": "F",
+        "seamark:light:height": "32",
+        "seamark:light:orientation": "103",
+        "seamark:light:reference": "F 4626.1",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2606505,
+          22.6920565
+        ]
+      },
+      "id": "node/1271039636"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039688",
+        "man_made": "lighthouse",
+        "name": "安平燈塔",
+        "name:en": "Anping Lighthouse",
+        "name:zh": "安平燈塔",
+        "seamark:information": "Visible 305°-145°.",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:exhibition": "night",
+        "seamark:light:group": "3",
+        "seamark:light:height": "22.6",
+        "seamark:light:period": "15",
+        "seamark:light:range": "15.2",
+        "seamark:light:reference": "F 4628",
+        "seamark:light:sequence": "1.5+(1.5)+1.5+(1.5)+1.5+(7.5)",
+        "seamark:light:visibility": "part_obscured",
+        "seamark:name": "安平燈塔",
+        "seamark:type": "light_minor",
+        "source": "Bing",
+        "website": "https://www.motcmpb.gov.tw/MOTCMPBWeb/wSite/ct?xItem=3482&ctNode=260&mp=1&idPath=220_226_260",
+        "wikidata": "Q33128843"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.1470566,
+          22.9908343
+        ]
+      },
+      "id": "node/1271039688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039793",
+        "description": "是台灣的極西點",
+        "man_made": "lighthouse",
+        "name": "國聖港燈塔",
+        "seamark:information": "Fl.W. 4s, Fl.R. 4s marks end of peninsula 1.3 miles NNE.",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "2",
+        "seamark:light:height": "34",
+        "seamark:light:period": "15",
+        "seamark:light:range": "16",
+        "seamark:light:reference": "F 4630",
+        "seamark:name": "國聖港燈塔",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "wikidata": "Q101096639"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.036,
+          23.1007222
+        ]
+      },
+      "id": "node/1271039793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039795",
+        "man_made": "lighthouse",
+        "name": "塭港堆燈塔",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "58.3",
+        "seamark:light:period": "4",
+        "seamark:light:range": "11",
+        "seamark:light:reference": "F 4658.4",
+        "seamark:name": "Wai-san-ting Chou",
+        "seamark:radar_reflector": "yes",
+        "seamark:type": "light_minor",
+        "source": "https://www.cga.gov.tw/GipOpen/wSite/public/Attachment/f1470204242375.pdf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.0333333,
+          23.4336111
+        ]
+      },
+      "id": "node/1271039795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039808",
+        "man_made": "lighthouse",
+        "name": "芳苑燈塔",
+        "seamark:light:character": "Iso",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "36",
+        "seamark:light:period": "10",
+        "seamark:light:range": "17",
+        "seamark:light:reference": "F 4659.5",
+        "seamark:name": "Fong-Yuan",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "Q",
+        "seamark:radar_transponder:period": "75",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "wikidata": "Q15927547",
+        "wikipedia": "zh:芳苑燈塔",
+        "wikipedia:zh": "芳苑燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3241315,
+          23.9711566
+        ]
+      },
+      "id": "node/1271039808"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039839",
+        "man_made": "lighthouse",
+        "name": "目斗嶼燈塔",
+        "name:en": "Mudouyu Lighthouse",
+        "name:zh": "目斗嶼燈塔",
+        "name:zh-Hans": "目斗屿灯塔",
+        "name:zh-Hant": "目斗嶼燈塔",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "49",
+        "seamark:light:period": "20",
+        "seamark:light:range": "27",
+        "seamark:light:reference": "F 4658",
+        "seamark:name": "Mu-t'ou Hsu",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "wikidata": "Q15920024",
+        "wikipedia": "zh:目斗嶼燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.6004247,
+          23.78632
+        ]
+      },
+      "id": "node/1271039839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039902",
+        "man_made": "lighthouse",
+        "name": "浮塭燈桿",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "13.7",
+        "seamark:light:period": "4",
+        "seamark:light:range": "9",
+        "seamark:light:reference": "F 4651",
+        "seamark:light:sequence": "0.5+(3.5)",
+        "seamark:name": "Fou-Wen",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5243333,
+          23.5398333
+        ]
+      },
+      "id": "node/1271039902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039921",
+        "man_made": "lighthouse",
+        "name": "查母嶼燈塔",
+        "name:zh": "查母嶼燈塔",
+        "name:zh-Hans": "查母屿灯塔",
+        "name:zh-Hant": "查母嶼燈塔",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "25",
+        "seamark:light:period": "6",
+        "seamark:light:range": "9",
+        "seamark:light:reference": "F 4650",
+        "seamark:light:sequence": "0.4+(5.6)",
+        "seamark:name": "Ch'a-mou Hsu",
+        "seamark:radar_reflector": "yes",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.7267533,
+          23.534542
+        ]
+      },
+      "id": "node/1271039921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039933",
+        "man_made": "lighthouse",
+        "name": "臺中港燈塔",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "3",
+        "seamark:light:height": "62",
+        "seamark:light:period": "30",
+        "seamark:light:range": "27",
+        "seamark:light:reference": "F 4660.15",
+        "seamark:name": "Taichung Kan",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "wikidata": "Q109685045"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5229956,
+          24.28799
+        ]
+      },
+      "id": "node/1271039933"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039934",
+        "man_made": "lighthouse",
+        "name": "北堤頭燈塔",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "21.9",
+        "seamark:light:period": "4",
+        "seamark:light:range": "17.5",
+        "seamark:light:reference": "F 4660.4",
+        "seamark:light:sequence": "0.8+(3.2)",
+        "seamark:name": "Taichung",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "M",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4865,
+          24.2996944
+        ]
+      },
+      "id": "node/1271039934"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039936",
+        "man_made": "lighthouse",
+        "name": "北防波堤進港航道扇形指向燈",
+        "name_1": "北防波堤進港航道扇形指向燈",
+        "seamark:information": "G. 232°48´-237°12´, W.-",
+        "seamark:light:1:character": "F",
+        "seamark:light:1:colour": "green",
+        "seamark:light:1:height": "13",
+        "seamark:light:1:range": "11",
+        "seamark:light:1:sector_end": "237.2",
+        "seamark:light:1:sector_start": "232.8",
+        "seamark:light:2:character": "F",
+        "seamark:light:2:colour": "white",
+        "seamark:light:2:height": "13",
+        "seamark:light:2:range": "14",
+        "seamark:light:3:character": "F",
+        "seamark:light:3:colour": "red",
+        "seamark:light:3:height": "13",
+        "seamark:light:3:range": "11",
+        "seamark:light:reference": "F 4660.45",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4983412,
+          24.294876
+        ]
+      },
+      "id": "node/1271039936"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039937",
+        "man_made": "lighthouse",
+        "name": "主航道扇形指向燈暨前導標",
+        "seamark:information": "White light visible on range line only.",
+        "seamark:light:1:character": "F",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:height": "45",
+        "seamark:light:1:range": "17",
+        "seamark:light:2:character": "F",
+        "seamark:light:2:colour": "red",
+        "seamark:light:2:height": "45",
+        "seamark:light:2:range": "17",
+        "seamark:light:3:character": "F",
+        "seamark:light:3:colour": "green",
+        "seamark:light:3:height": "45",
+        "seamark:light:3:range": "17",
+        "seamark:light:reference": "F 4660.94",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.523675,
+          24.2826142
+        ]
+      },
+      "id": "node/1271039937"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039944",
+        "man_made": "lighthouse",
+        "name": "淺水船渠西連續壁綠色燈杆",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "13",
+        "seamark:light:period": "3",
+        "seamark:light:range": "12",
+        "seamark:light:reference": "F 4660.7",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5144898,
+          24.2884598
+        ]
+      },
+      "id": "node/1271039944"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039946",
+        "man_made": "lighthouse",
+        "name": "淺水船渠東連續壁紅色燈杆",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "8",
+        "seamark:light:period": "5",
+        "seamark:light:range": "10",
+        "seamark:light:reference": "F 4660.92",
+        "seamark:light:sequence": "0.5+(4.5)",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.514945,
+          24.288218
+        ]
+      },
+      "id": "node/1271039946"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039954",
+        "man_made": "lighthouse",
+        "name": "北內堤燈塔",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:period": "4",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5135459,
+          24.2885145
+        ]
+      },
+      "id": "node/1271039954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039971",
+        "man_made": "lighthouse",
+        "name": "第五組後導標",
+        "seamark:light:category": "upper",
+        "seamark:light:character": "F",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "43",
+        "seamark:light:range": "9",
+        "seamark:light:reference": "F 4660.676",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5211446,
+          24.2944097
+        ]
+      },
+      "id": "node/1271039971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039990",
+        "man_made": "lighthouse",
+        "name": "第二組前導標",
+        "seamark:light:category": "lower",
+        "seamark:light:character": "F",
+        "seamark:light:colour": "green",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4835561,
+          24.2361434
+        ]
+      },
+      "id": "node/1271039990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271039994",
+        "man_made": "lighthouse",
+        "name": "第二組後導標",
+        "seamark:light:category": "upper",
+        "seamark:light:character": "F",
+        "seamark:light:colour": "green",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4826519,
+          24.2354916
+        ]
+      },
+      "id": "node/1271039994"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1290373202",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "三仙台燈塔",
+        "seamark:type": "light_major",
+        "source": "Maxar Premium",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4217515,
+          23.1262822
+        ]
+      },
+      "id": "way/1290373202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1294405437",
+        "man_made": "lighthouse",
+        "name": "主航道後導標",
+        "seamark:light:category": "rear",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "70",
+        "seamark:light:range": "10",
+        "seamark:light:reference": "F 4660.941",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5308492,
+          24.279625
+        ]
+      },
+      "id": "node/1294405437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1358324707",
+        "man_made": "lighthouse",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.0014046,
+          25.0078606
+        ]
+      },
+      "id": "way/1358324707"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1609206981",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.065195,
+          23.1826671
+        ]
+      },
+      "id": "node/1609206981"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1609206982",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.0685746,
+          23.1822455
+        ]
+      },
+      "id": "node/1609206982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1609206988",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.0656778,
+          23.1843339
+        ]
+      },
+      "id": "node/1609206988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1609206991",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.0688455,
+          23.1832835
+        ]
+      },
+      "id": "node/1609206991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1635401658",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.0963109,
+          23.2247538
+        ]
+      },
+      "id": "node/1635401658"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2293348642",
+        "man_made": "lighthouse",
+        "name": "富貴角燈塔",
+        "name:en": "Fu-kuei Chiao Lighthouse",
+        "name:zh": "富貴角燈塔",
+        "seamark:fog_signal:category": "horn",
+        "seamark:fog_signal:group": "1",
+        "seamark:fog_signal:period": "30",
+        "seamark:fog_signal:sequence": "3.0+(27.0)",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:range": "27",
+        "seamark:light:1:sector_end": "272",
+        "seamark:light:1:sector_start": "69",
+        "seamark:light:character": "Fl",
+        "seamark:light:group": "2",
+        "seamark:light:height": "31",
+        "seamark:light:information": "Visible 069°-272°.Horn: 1 bl. ev. 30s.",
+        "seamark:light:period": "15",
+        "seamark:light:reference": "P 4670",
+        "seamark:name": "Fu-kuei Chiao",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "wikidata": "Q10954780",
+        "wikipedia": "zh:富貴角燈塔",
+        "wikipedia:zh": "富貴角燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5365833,
+          25.2982222
+        ]
+      },
+      "id": "node/2293348642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2317210398",
+        "man_made": "lighthouse",
+        "name": "西洞尾燈塔",
+        "name:yue-Hans": "西洞尾灯塔",
+        "name:zh": "西洞尾燈塔",
+        "name:zh-Hant": "西洞尾燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4924174,
+          23.3935075
+        ]
+      },
+      "id": "node/2317210398"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2341676054",
+        "alt_name": "基隆嶼燈塔",
+        "ele": "189.3",
+        "height": "12.3",
+        "man_made": "lighthouse",
+        "name": "基隆島燈塔",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "190",
+        "seamark:light:period": "5",
+        "seamark:light:range": "12.8",
+        "seamark:light:sequence": "0.5+(4.5)",
+        "seamark:type": "light_minor",
+        "start_date": "1980",
+        "wikidata": "Q109606380"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7869663,
+          25.1927542
+        ]
+      },
+      "id": "node/2341676054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2383293772",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5083601,
+          22.056115
+        ]
+      },
+      "id": "node/2383293772"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2614541813",
+        "man_made": "lighthouse",
+        "name": "海墘岩燈桿"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5403877,
+          23.5803587
+        ]
+      },
+      "id": "node/2614541813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2614544526",
+        "man_made": "lighthouse",
+        "name": "花嶼燈塔",
+        "name:zh": "花嶼燈塔",
+        "name:zh-Hans": "花屿灯塔",
+        "name:zh-Hant": "花嶼燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3164311,
+          23.4026519
+        ]
+      },
+      "id": "node/2614544526"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2614560544",
+        "man_made": "lighthouse",
+        "name": "高美燈塔(停用)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5511361,
+          24.3126305
+        ]
+      },
+      "id": "node/2614560544"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2614573750",
+        "man_made": "lighthouse",
+        "name": "野柳燈桿"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6975966,
+          25.2137341
+        ]
+      },
+      "id": "node/2614573750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3250130923",
+        "alt_name": "旗津燈塔",
+        "alt_name:en": "Cijin Lighthouse",
+        "alt_name:nan": "Kî-tin Teng-thah",
+        "alt_name:nan-Hant": "旗津燈塔",
+        "alt_name:nan-Latn-pehoeji": "Kî-tin Teng-thah",
+        "alt_name:nan-Latn-tailo": "Kî-tin Ting-thah",
+        "alt_name:zh": "旗津燈塔",
+        "man_made": "lighthouse",
+        "name": "高雄燈塔",
+        "name:en": "Kaohsiung Lighthouse",
+        "name:nan": "Ko-hiông Teng-thah",
+        "name:nan-Hant": "高雄燈塔",
+        "name:nan-Latn-pehoeji": "Ko-hiông Teng-thah",
+        "name:nan-Latn-tailo": "Ko-hiông Ting-thah",
+        "name:zh": "高雄燈塔",
+        "name:zh-Hans": "高雄灯塔",
+        "name:zh-Hant": "高雄燈塔",
+        "seamark:information": "Traffic signals. Signal station.",
+        "seamark:landmark:height": "50",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:exhibition": "night",
+        "seamark:light:1:group": "4",
+        "seamark:light:1:height": "58.2",
+        "seamark:light:1:period": "30",
+        "seamark:light:1:range": "25.2",
+        "seamark:light:1:sector_end": "158",
+        "seamark:light:1:sector_start": "320",
+        "seamark:light:1:sequence": "0.4+(4.6),0.4+(4.6),0.4+(4.6),0.4+(14.6)",
+        "seamark:light:1:visibility": "part_obscured",
+        "seamark:light:reference": "F 4618",
+        "seamark:name": "Cijin",
+        "seamark:national_name": "高雄燈塔",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "tourism": "attraction",
+        "wikidata": "Q3847130",
+        "wikipedia": "zh:高雄燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2648391,
+          22.6154849
+        ]
+      },
+      "id": "node/3250130923"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3605023719",
+        "man_made": "lighthouse",
+        "name": "日月潭土亭仔燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9228302,
+          23.8546883
+        ]
+      },
+      "id": "node/3605023719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3650946225",
+        "man_made": "lighthouse",
+        "name": "福寶燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3810609,
+          24.0443517
+        ]
+      },
+      "id": "node/3650946225"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3701482370",
+        "man_made": "lighthouse",
+        "name": "北碇燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.5045657,
+          24.4271463
+        ]
+      },
+      "id": "node/3701482370"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3701496921",
+        "man_made": "lighthouse",
+        "name": "東碇燈塔",
+        "name:en": "Dongding Lighthouse",
+        "name:nan": "Tang-tēng Teng-thah",
+        "name:nan-Hant": "東碇燈燈塔",
+        "name:nan-Latn-pehoeji": "Tang-tēng Teng-thah",
+        "name:nan-Latn-tailo": "Tang-tīng Ting-thah",
+        "name:vi": "Hải đăng Đông Đĩnh Đảo",
+        "name:zh": "東碇燈塔",
+        "name:zh-Hans": "东碇岛灯塔",
+        "name:zh-Hant": "東碇燈塔",
+        "seamark:information": "Gun: 1 report in answer to vessel´s fog signal, 2 reports 5 minutes later, repeated while vessel´s fog fog signal continues to be heard",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "69",
+        "seamark:light:period": "10",
+        "seamark:light:range": "11",
+        "seamark:light:reference": "F 3606",
+        "seamark:name": "Tung-ting Tao",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12.",
+        "wikidata": "Q109772022",
+        "wikipedia": "zh:東椗島燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.2336523,
+          24.1619214
+        ]
+      },
+      "id": "node/3701496921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3813648311",
+        "man_made": "lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "17.2",
+        "seamark:light:period": "5",
+        "seamark:light:range": "12.2",
+        "seamark:light:reference": "P 4663.4",
+        "seamark:name": "LT1",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "T",
+        "seamark:radio_station:category": "ais",
+        "seamark:type": "light_minor",
+        "source": "https://cnmoo.mnd.gov.tw/NoticeView_en.aspx?not_id=34624"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3585833,
+          25.1551389
+        ]
+      },
+      "id": "node/3813648311"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3813648314",
+        "man_made": "lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "18.7",
+        "seamark:light:period": "5",
+        "seamark:light:range": "14.6",
+        "seamark:name": "LT5",
+        "seamark:radio_station:category": "ais",
+        "seamark:type": "light_minor",
+        "source": "https://cnmoo.mnd.gov.tw/NoticeView_en.aspx?not_id=34624"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3610278,
+          25.15
+        ]
+      },
+      "id": "node/3813648314"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3869478973",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4170214,
+          23.1933206
+        ]
+      },
+      "id": "node/3869478973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4161521225",
+        "man_made": "lighthouse",
+        "name": "西鼻嶼燈塔",
+        "name:zh": "西鼻嶼燈塔",
+        "name:zh-Hans": "西鼻屿灯塔",
+        "name:zh-Hant": "西鼻嶼燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4111859,
+          23.214968
+        ]
+      },
+      "id": "node/4161521225"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4322578745",
+        "man_made": "lighthouse",
+        "name": "外堤紅燈"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8230444,
+          25.131638
+        ]
+      },
+      "id": "node/4322578745"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4322578746",
+        "man_made": "lighthouse",
+        "name": "內堤紅燈"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8217601,
+          25.132175
+        ]
+      },
+      "id": "node/4322578746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4322578747",
+        "man_made": "lighthouse",
+        "name": "內堤綠燈"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8218287,
+          25.1317287
+        ]
+      },
+      "id": "node/4322578747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4741525333",
+        "man_made": "lighthouse",
+        "name": "燈塔",
+        "name:en": "Lighthouse",
+        "name:zh": "燈塔",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4386261,
+          22.4636148
+        ]
+      },
+      "id": "node/4741525333"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5084973391",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.9497903,
+          25.0215332
+        ]
+      },
+      "id": "node/5084973391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5084973392",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.9500487,
+          25.0221393
+        ]
+      },
+      "id": "node/5084973392"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5146186234",
+        "alt_name": "東引島燈塔",
+        "man_made": "lighthouse",
+        "name": "東湧燈塔",
+        "name:en": "Dongyong Lighthouse",
+        "name:zh": "東湧燈塔",
+        "wikidata": "Q11103346",
+        "wikipedia": "zh:東引島燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5103445,
+          26.3657582
+        ]
+      },
+      "id": "node/5146186234"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5175485237",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7540957,
+          25.1640126
+        ]
+      },
+      "id": "node/5175485237"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5175485238",
+        "man_made": "lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:period": "3",
+        "seamark:light:reference": "F 4676",
+        "seamark:name": "基隆港西防波堤燈杆",
+        "seamark:radar_reflector": "yes",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7526105,
+          25.1584415
+        ]
+      },
+      "id": "node/5175485238"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5242088018",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6883681,
+          25.206464
+        ]
+      },
+      "id": "node/5242088018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5242088019",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6886776,
+          25.2082938
+        ]
+      },
+      "id": "node/5242088019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5242088020",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6874854,
+          25.2096264
+        ]
+      },
+      "id": "node/5242088020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6025041585",
+        "man_made": "lighthouse",
+        "name": "淡水燈塔",
+        "seamark:light:character": "LFl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "35.2",
+        "seamark:light:period": "8",
+        "seamark:light:range": "16.6",
+        "seamark:light:reference": "P 4664",
+        "seamark:light:sequence": "2+(6)",
+        "seamark:name": "Tan-Shui Kang.",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 112. 2021.",
+        "wikidata": "Q86671946",
+        "wikipedia": "zh:淡水港燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4200931,
+          25.1771703
+        ]
+      },
+      "id": "node/6025041585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6045018944",
+        "man_made": "lighthouse",
+        "name": "工作船渠西連續壁綠色燈杆"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5174462,
+          24.2870539
+        ]
+      },
+      "id": "node/6045018944"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6045018945",
+        "man_made": "lighthouse",
+        "name": "工作船渠東連續壁紅色燈杆"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5184239,
+          24.2869093
+        ]
+      },
+      "id": "node/6045018945"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6045018946",
+        "man_made": "lighthouse",
+        "name": "北防波堤進港航道前導標"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4984044,
+          24.2948756
+        ]
+      },
+      "id": "node/6045018946"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6045018947",
+        "man_made": "lighthouse",
+        "name": "北防波堤進港航道後導標"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5028098,
+          24.2967926
+        ]
+      },
+      "id": "node/6045018947"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6045018948",
+        "man_made": "lighthouse",
+        "name": "第一組前導標"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4968576,
+          24.2370052
+        ]
+      },
+      "id": "node/6045018948"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6045018949",
+        "man_made": "lighthouse",
+        "name": "第三組前導標"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4934865,
+          24.2514371
+        ]
+      },
+      "id": "node/6045018949"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6045018950",
+        "man_made": "lighthouse",
+        "name": "第三組後導標"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4938901,
+          24.2524006
+        ]
+      },
+      "id": "node/6045018950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6045018951",
+        "man_made": "lighthouse",
+        "name": "第四組前導標",
+        "seamark:type": "light_minor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5140047,
+          24.2586095
+        ]
+      },
+      "id": "node/6045018951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6045018952",
+        "man_made": "lighthouse",
+        "name": "第四組後導標"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.515634,
+          24.2597978
+        ]
+      },
+      "id": "node/6045018952"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6045018953",
+        "man_made": "lighthouse",
+        "name": "第五組前導標"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.518988,
+          24.2893677
+        ]
+      },
+      "id": "node/6045018953"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6374567684",
+        "man_made": "lighthouse",
+        "seamark:type": "light_major"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5903774,
+          22.3633654
+        ]
+      },
+      "id": "node/6374567684"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6845063463",
+        "man_made": "lighthouse",
+        "seamark:type": "light_minor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7456496,
+          21.9433032
+        ]
+      },
+      "id": "node/6845063463"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6845063464",
+        "man_made": "lighthouse",
+        "seamark:type": "light_minor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7461778,
+          21.9436116
+        ]
+      },
+      "id": "node/6845063464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7235187835",
+        "man_made": "lighthouse",
+        "seamark:information": "S. mole marked by three 2 F.R. (vert.) 6M lights.Radar reflector.",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "yellow;red",
+        "seamark:light:height": "18",
+        "seamark:light:period": "4",
+        "seamark:light:range": "14",
+        "seamark:light:reference": "F 4624.42",
+        "seamark:name": "31712",
+        "seamark:radar_reflector": "yes",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 112. 2009-11-12."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.299,
+          22.5476111
+        ]
+      },
+      "id": "node/7235187835"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7621676216",
+        "man_made": "lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "26.5",
+        "seamark:light:period": "6",
+        "seamark:light:range": "20",
+        "seamark:light:sequence": "1.5+(4.5)",
+        "seamark:name": "31711",
+        "seamark:type": "light_minor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2862222,
+          22.5437222
+        ]
+      },
+      "id": "node/7621676216"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8281138593",
+        "height": "13.8",
+        "man_made": "lighthouse",
+        "name": "太平島燈塔",
+        "name:en": "Taiping Island Lighthouse",
+        "name:nan": "Thài-pêng-tó Teng-thah",
+        "name:nan-Hant": "太平島燈塔",
+        "name:nan-Latn-pehoeji": "Thài-pêng-tó Teng-thah",
+        "name:nan-Latn-tailo": "Thài-pîng-tó Ting-thah",
+        "name:zh": "太平島燈塔",
+        "name:zh-Hans": "太平岛灯塔",
+        "name:zh-Hant": "太平島燈塔",
+        "operator": "交通部航港局",
+        "seamark:landmark:height": "13.8",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:group": "3",
+        "seamark:light:1:period": "10",
+        "seamark:light:1:range": "10",
+        "seamark:light:1:sequence": "1+(1)+1+(1)+1+(5)",
+        "seamark:light:exhibition": "night",
+        "seamark:type": "light_major",
+        "start_date": "2015-12-12",
+        "wikidata": "Q101096642"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.3633493,
+          10.3749291
+        ]
+      },
+      "id": "node/8281138593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8513026859",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9194037,
+          24.8479944
+        ]
+      },
+      "id": "node/8513026859"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8513026860",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9199393,
+          24.8486306
+        ]
+      },
+      "id": "node/8513026860"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8513026861",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9129177,
+          24.8539461
+        ]
+      },
+      "id": "node/8513026861"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8513026862",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9114854,
+          24.8547726
+        ]
+      },
+      "id": "node/8513026862"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8513026863",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9124152,
+          24.85252
+        ]
+      },
+      "id": "node/8513026863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8513026864",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9118323,
+          24.8496712
+        ]
+      },
+      "id": "node/8513026864"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8513026865",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9135039,
+          24.8518491
+        ]
+      },
+      "id": "node/8513026865"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8513026866",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9144126,
+          24.857029
+        ]
+      },
+      "id": "node/8513026866"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9889709537",
+        "man_made": "lighthouse",
+        "name": "嵵板頭山頂導航標誌燈 (長髮公主)",
+        "name:zh": "嵵板頭山頂導航標誌燈 (長髮公主)",
+        "name:zh-Hans": "嵵板头山顶导航标志灯 (长发公主)",
+        "name:zh-Hant": "嵵板頭山頂導航標誌燈 (長髮公主)",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "46",
+        "seamark:light:period": "5",
+        "seamark:light:sequence": "0.5+(4.5)",
+        "seamark:type": "light_minor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.6098056,
+          23.6349444
+        ]
+      },
+      "id": "node/9889709537"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9889756036",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.9032918,
+          24.939555
+        ]
+      },
+      "id": "node/9889756036"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9890282596",
+        "man_made": "lighthouse",
+        "name": "小門嶼燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5144352,
+          23.6539604
+        ]
+      },
+      "id": "node/9890282596"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9920709938",
+        "man_made": "lighthouse",
+        "name": "紅燈"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.823872,
+          25.1319969
+        ]
+      },
+      "id": "node/9920709938"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10228669194",
+        "ele": "45.1",
+        "ele:note": "燈高：45.1m(自高潮面起算)；塔高28.4m",
+        "height": "28.4",
+        "man_made": "lighthouse",
+        "name": "花蓮港燈塔",
+        "seamark:conspicuity": "conspicuous",
+        "seamark:construction": "metal",
+        "seamark:information": "https://hl.twport.com.tw/chinese/cp.aspx",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:group": "3",
+        "seamark:light:height": "45",
+        "seamark:light:period": "12",
+        "seamark:light:range": "9.8",
+        "seamark:light:reference": "NGA 13732",
+        "seamark:light:sequence": "1+(1)+1+(1)+1+(7)",
+        "seamark:name": "花蓮港燈塔",
+        "seamark:reflectivity": "not_conspicuous",
+        "seamark:status": "public",
+        "seamark:type": "light_major",
+        "source": "https://hl.twport.com.tw/chinese/cp.aspx",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6135476,
+          23.9747328
+        ]
+      },
+      "id": "node/10228669194"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10859523157",
+        "man_made": "lighthouse",
+        "name": "七美嶼燈塔",
+        "name:zh": "七美嶼燈塔",
+        "name:zh-Hans": "七美屿灯塔",
+        "name:zh-Hant": "七美嶼燈塔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4281593,
+          23.1901491
+        ]
+      },
+      "id": "node/10859523157"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10998553001",
+        "man_made": "lighthouse",
+        "name": "燈塔 (紅)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2562069,
+          22.6177226
+        ]
+      },
+      "id": "node/10998553001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10998553002",
+        "man_made": "lighthouse",
+        "name": "燈塔 (綠)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2567858,
+          22.6209153
+        ]
+      },
+      "id": "node/10998553002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11792437856",
+        "man_made": "lighthouse",
+        "name": "Chilaibi Lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.643846,
+          24.0159585
+        ]
+      },
+      "id": "node/11792437856"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12000129905",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9224401,
+          24.846979
+        ]
+      },
+      "id": "node/12000129905"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12000129906",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9214536,
+          24.8477918
+        ]
+      },
+      "id": "node/12000129906"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12031617966",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.9396316,
+          24.8430909
+        ]
+      },
+      "id": "node/12031617966"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12635870735",
+        "man_made": "lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "88",
+        "seamark:light:period": "5",
+        "seamark:light:range": "11",
+        "seamark:light:reference": "P 3628",
+        "seamark:light:sequence": "0.5+(4.5)",
+        "seamark:name": "Wu-ch'iu Hsu",
+        "seamark:type": "light_major"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.4530278,
+          24.992
+        ]
+      },
+      "id": "node/12635870735"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770282051",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8395643,
+          24.8686504
+        ]
+      },
+      "id": "node/12770282051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770282052",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8394747,
+          24.8680545
+        ]
+      },
+      "id": "node/12770282052"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770282053",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8411243,
+          24.8665638
+        ]
+      },
+      "id": "node/12770282053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770282054",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8408089,
+          24.8654818
+        ]
+      },
+      "id": "node/12770282054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770282055",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8450556,
+          24.8674205
+        ]
+      },
+      "id": "node/12770282055"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770282056",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8448287,
+          24.8652403
+        ]
+      },
+      "id": "node/12770282056"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770282057",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8439321,
+          24.8644709
+        ]
+      },
+      "id": "node/12770282057"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770282058",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8428636,
+          24.8635048
+        ]
+      },
+      "id": "node/12770282058"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770282059",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8421425,
+          24.8628709
+        ]
+      },
+      "id": "node/12770282059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12770282060",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8455803,
+          24.8659699
+        ]
+      },
+      "id": "node/12770282060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13294885618",
+        "man_made": "lighthouse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.4091711,
+          24.4288127
+        ]
+      },
+      "id": "node/13294885618"
+    }
+  ]
+}

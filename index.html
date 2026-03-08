@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lighthouses of Taiwan — Maritime Memory</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+  />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <section class="panel-block title-block">
+        <div class="eyebrow">GEOG_572 - Final Project</div>
+        <h1>Lighthouses of Taiwan</h1>
+        <p>Maritime memory through lighthouse history, port activity, and shipping routes.</p>
+      </section>
+
+      <section class="panel-block">
+        <h2>Display Mode</h2>
+        <button id="dnToggle" class="ui-btn" type="button" title="Toggle basemap">
+          <span id="dnIcon">🎨</span>
+          <span id="dnText">Watercolor</span>
+        </button>
+      </section>
+
+      <section class="panel-block">
+        <h2>Search</h2>
+        <input id="searchInput" placeholder="Type a lighthouse name…" list="lhList" />
+        <datalist id="lhList"></datalist>
+        <div class="hint">Pick a suggestion, or type a name and press Enter.</div>
+      </section>
+
+      <section class="panel-block">
+        <h2>Historical Filters</h2>
+        <label class="control-label" for="eraFilter">Lighthouse era</label>
+        <select id="eraFilter" class="sidebar-select">
+          <option value="all">All eras</option>
+          <option value="Qing">Qing (1874–1883)</option>
+          <option value="Japanese">Japanese Rule (1897–1939)</option>
+          <option value="ROC">ROC (1949–1983)</option>
+          <option value="Modern Restoration">Modern Restoration (post-1945)</option>
+        </select>
+
+        <label class="checkline">
+          <input type="checkbox" id="togglePorts" checked />
+          <span>Show historical port layer</span>
+        </label>
+
+        <label class="checkline">
+          <input type="checkbox" id="toggleHistoricStyling" checked />
+          <span>Style lighthouse markers by era</span>
+        </label>
+
+        <label class="checkline">
+          <input type="checkbox" id="toggleFishingGrounds" />
+          <span>Show fishing grounds</span>
+        </label>
+      </section>
+
+      <section class="panel-block summary-block">
+        <h2>Map Summary</h2>
+        <div class="summary-grid">
+          <div class="summary-item">
+            <span class="summary-label">Visible Lighthouses</span>
+            <strong id="summaryCount">0</strong>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Basemap</span>
+            <strong id="summaryMode">Watercolor</strong>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Port Metric</span>
+            <strong>2023 Cargo</strong>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Era Filter</span>
+            <strong id="summaryEra">All</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel-block">
+        <h2>Legend</h2>
+        <div class="legend-row"><div class="swatch dots"></div><div>Glow particles density</div></div>
+        <div class="legend-row"><div class="swatch lanes"></div><div>Shipping lanes (stylized)</div></div>
+        <div class="legend-row"><div class="swatch beams"></div><div>Beacon beams (animated)</div></div>
+        <div class="legend-row"><div class="swatch symbols"></div><div>Nautical symbols</div></div>
+        <div class="legend-row"><div class="swatch places"></div><div>Major places</div></div>
+        <div class="legend-row"><div class="era-chip era-qing"></div><div>Qing (1874–1883)</div></div>
+        <div class="legend-row"><div class="era-chip era-japanese"></div><div>Japanese Rule (1897–1939)</div></div>
+        <div class="legend-row"><div class="era-chip era-roc"></div><div>ROC (1949–1983)</div></div>
+        <div class="legend-row"><div class="era-chip era-modern"></div><div>Modern Restoration (post-1945)</div></div>
+        <div class="legend-row"><div class="port-chip"></div><div>Port circle = 2023 cargo handled</div></div>
+      </section>
+
+      <section class="panel-block">
+        <h2>Interpretation</h2>
+        <p class="panel-copy">
+          This is a map illustrating historical infrastructure. Lighthouses become time markers, while major ports suggest how Taiwan’s maritime system consolidates around a few high-volume gateways.
+        </p>
+      </section>
+
+      <section class="panel-block">
+        <h2>Source</h2>
+        <div class="meta">
+          <div><strong>Library:</strong> Leaflet (+ MarkerCluster)</div>
+          <div><strong>Basemap:</strong> Stadia Stamen Watercolor + CARTO Dark</div>
+          <div><strong>Data:</strong> ./js/taiwan.geojson + in-script historical lookup</div>
+          <div><strong>Port layer:</strong> 2023 cargo handled</div>
+        </div>
+      </section>
+
+      <section class="panel-block status-panel">
+        <h2>Status</h2>
+        <div id="statusText">Loading…</div>
+        <button id="retryBtn" class="ui-btn" type="button">Reload</button>
+      </section>
+    </aside>
+
+    <main class="map-panel">
+      <div id="map">
+        <div class="nightFx">
+          <div class="nightStars"></div>
+          <div class="nightHorizon"></div>
+          <div class="nightAurora"></div>
+          <div class="nightBathymetry"></div>
+          <div class="nightInk"></div>
+        </div>
+
+        <div class="vignette"></div>
+        <div class="grain"></div>
+        <div class="inkShimmer"></div>
+        <div class="neatline"></div>
+        <div class="tickframe"></div>
+      </div>
+
+      <div id="inset">
+        <div id="insetTitle">OVERVIEW</div>
+        <div id="insetMap"></div>
+      </div>
+    </main>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -13,25 +13,17 @@ The project visualizes how navigation aids, coastal ports, and maritime activity
 
 The map combines multiple thematic layers:
 
-Lighthouse locations (clustered markers)
+1. Lighthouse locations (clustered markers)
 
-Historical lighthouse eras
+2. Historical lighthouse eras
 
-Qing (1874–1883)
+3. Historical port activity
 
-Japanese Rule (1897–1939)
+4. Port-to-port shipping connections
 
-ROC (1949–1983)
+5. Regional fishing grounds
 
-Modern restoration (post-1945)
-
-Historical port activity
-
-Port-to-port shipping connections
-
-Regional fishing grounds
-
-Stylized glow particles and lighthouse beams
+6. Stylized glow particles and lighthouse beams
 
 The goal is to illustrate Taiwan’s maritime system as a historical and spatial network, where lighthouses serve as time markers along shipping and fishing corridors.
 

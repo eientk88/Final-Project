@@ -69,5 +69,7 @@ Map summary panel showing visible features
 
 ## Author
 Thanasis Karageorgos
+
 Oregon State University
+
 GEOG 572, Winter 2026

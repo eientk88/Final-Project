@@ -1,5 +1,5 @@
 const GEOJSON_FILES = [{ key: "taiwan", url: "./js/taiwan.geojson" }];
-const CACHE_KEY = "tw_lighthouses_historical_sidebar_v6_ports_hatched_fishing";
+const CACHE_KEY = "tw_lighthouses_historical_sidebar_v9_ferry_motion_clipped_hatch";
 const CACHE_TTL_MS = 14 * 24 * 60 * 60 * 1000;
 
 const statusText = document.getElementById("statusText");
@@ -272,7 +272,7 @@ function eraLabelLong(era) {
 }
 
 /* =========================================================
-   DATA FOR NEW PORT LINKS + FISHING GROUNDS
+   PORTS / CORRIDORS / FISHING
    ========================================================= */
 
 const HISTORIC_PORTS = [
@@ -282,84 +282,145 @@ const HISTORIC_PORTS = [
   { id: "hualien", name: "Hualien", lat: 23.972, lng: 121.607, cargo_2023: 8827632 }
 ];
 
-const SHIPPING_LINKS = [
+const MAJOR_SHIPPING_CORRIDORS = [
   {
-    name: "Keelung ↔ Taichung",
+    id: "west",
+    name: "Taiwan Strait Corridor",
+    label: [23.9, 119.55],
     coords: [
-      [25.15, 121.74],
-      [24.95, 121.10],
-      [24.70, 120.60],
-      [24.30, 120.54]
+      [25.55, 119.25],
+      [25.10, 119.35],
+      [24.55, 119.45],
+      [23.95, 119.58],
+      [23.35, 119.72],
+      [22.75, 119.88],
+      [22.25, 120.02]
     ]
   },
   {
-    name: "Taichung ↔ Kaohsiung",
+    id: "north",
+    name: "North Approach",
+    label: [25.8, 122.02],
     coords: [
-      [24.30, 120.54],
-      [23.80, 120.28],
-      [23.20, 120.18],
-      [22.62, 120.30]
+      [26.55, 122.25],
+      [26.15, 122.15],
+      [25.82, 122.03],
+      [25.48, 121.92],
+      [25.18, 121.82]
     ]
   },
   {
-    name: "Keelung ↔ Hualien",
+    id: "south",
+    name: "Bashi Channel Corridor",
+    label: [21.75, 120.72],
+    coords: [
+      [21.05, 120.95],
+      [21.35, 120.86],
+      [21.70, 120.76],
+      [22.05, 120.62],
+      [22.35, 120.45],
+      [22.60, 120.30]
+    ]
+  },
+  {
+    id: "east",
+    name: "Pacific Offshore Corridor",
+    label: [23.65, 122.18],
+    coords: [
+      [25.30, 122.30],
+      [24.80, 122.18],
+      [24.20, 122.06],
+      [23.60, 122.02],
+      [23.00, 122.05],
+      [22.35, 122.16]
+    ]
+  }
+];
+
+const SECONDARY_SEA_LINKS = [
+  {
+    name: "Keelung–Matsu Ferry",
     coords: [
       [25.15, 121.74],
-      [24.85, 121.95],
-      [24.40, 121.88],
+      [25.45, 121.35],
+      [25.82, 120.75],
+      [26.16, 119.95]
+    ]
+  },
+  {
+    name: "Kaohsiung–Penghu Service",
+    coords: [
+      [22.62, 120.30],
+      [22.88, 120.02],
+      [23.20, 119.76],
+      [23.57, 119.56]
+    ]
+  },
+  {
+    name: "Taitung–Green Island",
+    coords: [
+      [22.76, 121.15],
+      [22.70, 121.28],
+      [22.66, 121.49]
+    ]
+  },
+  {
+    name: "Taitung–Orchid Island",
+    coords: [
+      [22.76, 121.15],
+      [22.48, 121.34],
+      [22.05, 121.55]
+    ]
+  },
+  {
+    name: "Budai–Penghu",
+    coords: [
+      [23.38, 120.15],
+      [23.46, 119.96],
+      [23.53, 119.76],
+      [23.57, 119.56]
+    ]
+  },
+  {
+    name: "Donggang–Xiaoliuqiu",
+    coords: [
+      [22.47, 120.44],
+      [22.42, 120.40],
+      [22.34, 120.37]
+    ]
+  },
+  {
+    name: "Keelung–Pengjia Islet",
+    coords: [
+      [25.15, 121.74],
+      [25.28, 121.86],
+      [25.40, 122.00],
+      [25.63, 122.07]
+    ]
+  },
+  {
+    name: "Suao–Hualien Coastal Service",
+    coords: [
+      [24.59, 121.86],
+      [24.35, 121.79],
+      [24.12, 121.71],
       [23.97, 121.61]
     ]
   },
   {
-    name: "Hualien ↔ Kaohsiung",
-    coords: [
-      [23.97, 121.61],
-      [23.45, 121.30],
-      [22.95, 121.02],
-      [22.62, 120.30]
-    ]
-  },
-  {
-    name: "Kaohsiung ↔ Penghu",
+    name: "Kaohsiung–Lanyu Supply",
     coords: [
       [22.62, 120.30],
-      [22.95, 120.00],
-      [23.28, 119.72],
-      [23.57, 119.56]
-    ]
-  },
-  {
-    name: "Taichung ↔ Penghu",
-    coords: [
-      [24.30, 120.54],
-      [24.05, 120.15],
-      [23.82, 119.82],
-      [23.57, 119.56]
-    ]
-  },
-  {
-    name: "Keelung ↔ Northeast Approach",
-    coords: [
-      [25.15, 121.74],
-      [25.35, 121.95],
-      [25.65, 122.10],
-      [26.00, 122.20]
-    ]
-  },
-  {
-    name: "Kaohsiung ↔ Bashi Channel",
-    coords: [
-      [22.62, 120.30],
-      [22.25, 120.45],
-      [21.85, 120.65],
-      [21.40, 120.82]
+      [22.40, 120.58],
+      [22.22, 120.92],
+      [22.05, 121.55]
     ]
   }
 ];
 
 const FISHING_GROUNDS = [
   {
-    name: "Taiwan Strait Shelf Grounds",
+    name: "Taiwan Strait Fishing Grounds",
     label: [23.85, 119.55],
     polygon: [
       [25.45, 118.85],
@@ -376,7 +437,7 @@ const FISHING_GROUNDS = [
     ]
   },
   {
-    name: "Penghu / Taiwan Bank Grounds",
+    name: "Penghu–Taiwan Bank Grounds",
     label: [23.45, 119.00],
     polygon: [
       [24.10, 118.50],
@@ -390,7 +451,7 @@ const FISHING_GROUNDS = [
     ]
   },
   {
-    name: "Northeast Coast Grounds",
+    name: "Northeast Coastal Grounds",
     label: [25.15, 121.95],
     polygon: [
       [25.85, 121.25],
@@ -404,8 +465,8 @@ const FISHING_GROUNDS = [
     ]
   },
   {
-    name: "Southeast / Green Island–Lanyu Grounds",
-    label: [22.45, 121.72],
+    name: "Bashi Channel Fisheries",
+    label: [22.35, 121.72],
     polygon: [
       [23.10, 121.10],
       [23.05, 121.85],
@@ -431,103 +492,224 @@ function makeTextMarker(html, latlng) {
   });
 }
 
-function shippingLabelHTML(name) {
-  return `
-    <div class="nautical" style="opacity:.82;">
-      <span class="sym">↝</span>
-      <span class="txt">${escapeHTML(name)}</span>
-    </div>
-  `;
+function makeShippingLabelHTML(name) {
+  return `<div class="shipping-label">${escapeHTML(name)}</div>`;
 }
 
-function fishingLabelHTML(name) {
+function makeFishingLabelHTML(name) {
   return `<div class="fishing-label">${escapeHTML(name)}</div>`;
 }
 
-function makeHatchPattern(isNight) {
-  const size = 12;
-  const canvas = document.createElement("canvas");
-  canvas.width = size;
-  canvas.height = size;
-  const ctx = canvas.getContext("2d");
+/* =========================================================
+   ANIMATED ROUTE HELPERS
+   ========================================================= */
 
-  ctx.clearRect(0, 0, size, size);
-  ctx.strokeStyle = isNight ? "rgba(160,220,255,0.40)" : "rgba(80,85,110,0.35)";
-  ctx.lineWidth = 1.2;
+function sampleAlongPixelPath(pts, t) {
+  if (pts.length < 2) return pts[0] || { x: 0, y: 0 };
 
-  ctx.beginPath();
-  ctx.moveTo(-2, size - 2);
-  ctx.lineTo(size - 2, -2);
-  ctx.stroke();
-
-  ctx.beginPath();
-  ctx.moveTo(4, size + 2);
-  ctx.lineTo(size + 2, 4);
-  ctx.stroke();
-
-  return canvas.toDataURL();
-}
-
-function buildShippingLinksLayer(isNight = false) {
-  const layer = L.layerGroup();
-  const items = [];
-
-  function styleSet(night) {
-    return {
-      halo: {
-        color: night ? "rgba(120,220,255,0.14)" : "rgba(80,55,30,0.10)",
-        weight: 8,
-        opacity: 1
-      },
-      main: {
-        color: night ? "rgba(180,220,255,0.62)" : "rgba(80,55,35,0.48)",
-        weight: 2.2,
-        opacity: 0.95,
-        dashArray: "8 8",
-        lineCap: "round",
-        lineJoin: "round"
-      }
-    };
+  const segLens = [];
+  let total = 0;
+  for (let i = 0; i < pts.length - 1; i++) {
+    const dx = pts[i + 1].x - pts[i].x;
+    const dy = pts[i + 1].y - pts[i].y;
+    const len = Math.hypot(dx, dy);
+    segLens.push(len);
+    total += len;
   }
 
-  const styles = styleSet(isNight);
+  const target = t * total;
+  let run = 0;
 
-  for (const route of SHIPPING_LINKS) {
-    const halo = L.polyline(route.coords, { ...styles.halo, interactive: false });
-    const main = L.polyline(route.coords, { ...styles.main, interactive: false });
-    const labelPt = route.coords[Math.floor(route.coords.length / 2)];
-    const label = makeTextMarker(shippingLabelHTML(route.name), labelPt);
+  for (let i = 0; i < segLens.length; i++) {
+    const len = segLens[i];
+    if (run + len >= target) {
+      const local = (target - run) / len;
+      return {
+        x: pts[i].x + (pts[i + 1].x - pts[i].x) * local,
+        y: pts[i].y + (pts[i + 1].y - pts[i].y) * local
+      };
+    }
+    run += len;
+  }
 
-    main.bindPopup(`
-      <div style="font-weight:800; margin-bottom:6px;">${escapeHTML(route.name)}</div>
-      <div style="font-size:12px; line-height:1.4; color:rgba(232,238,252,.88);">
-        Stylized maritime connection between major port approaches.
-      </div>
-    `);
+  return pts[pts.length - 1];
+}
 
-    layer.addLayer(halo);
-    layer.addLayer(main);
-    items.push({ halo, main, label });
+/* =========================================================
+   ANIMATED SHIPPING CORRIDORS
+   ========================================================= */
+
+class AnimatedSeaRoutesLayer extends L.Layer {
+  constructor(routes, opts = {}) {
+    super();
+    this.routes = routes || [];
+    this.opts = Object.assign({
+      dayLine: "70,55,35",
+      dayGlow: "100,75,45",
+      nightLine: "170,220,255",
+      nightGlow: "120,220,255",
+      lineWidthDay: 3.2,
+      lineWidthNight: 3.6,
+      glowWidthDay: 8,
+      glowWidthNight: 10,
+      dashDay: [8, 8],
+      dashNight: [10, 7],
+      shipRadius: 2.4,
+      shipSpeed: 0.028
+    }, opts);
+
+    this._isNight = false;
+    this._frame = null;
+    this._t0 = performance.now();
+  }
+
+  setMode(isNight) {
+    this._isNight = !!isNight;
+  }
+
+  onAdd(map) {
+    this._map = map;
+    this._canvas = L.DomUtil.create("canvas", "leaflet-zoom-animated");
+    this._ctx = this._canvas.getContext("2d");
+    map.getPane("overlayPane").appendChild(this._canvas);
+    map.on("move zoom resize", this._reset, this);
+    this._reset();
+    this._animate();
+  }
+
+  onRemove(map) {
+    map.getPane("overlayPane").removeChild(this._canvas);
+    map.off("move zoom resize", this._reset, this);
+    cancelAnimationFrame(this._frame);
+    this._frame = null;
+    this._map = null;
+  }
+
+  _reset() {
+    const size = this._map.getSize();
+    const dpr = window.devicePixelRatio || 1;
+    this._canvas.width = Math.round(size.x * dpr);
+    this._canvas.height = Math.round(size.y * dpr);
+    this._canvas.style.width = `${size.x}px`;
+    this._canvas.style.height = `${size.y}px`;
+    this._ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    this._draw(performance.now());
+  }
+
+  _animate() {
+    const tick = (t) => {
+      this._draw(t);
+      this._frame = requestAnimationFrame(tick);
+    };
+    this._frame = requestAnimationFrame(tick);
+  }
+
+  _getPixelPath(route) {
+    return route.coords.map(ll => this._map.latLngToLayerPoint(ll));
+  }
+
+  _drawPath(ctx, pts, style) {
+    if (pts.length < 2) return;
+
+    ctx.beginPath();
+    ctx.moveTo(pts[0].x, pts[0].y);
+    for (let i = 1; i < pts.length - 1; i++) {
+      const midX = (pts[i].x + pts[i + 1].x) / 2;
+      const midY = (pts[i].y + pts[i + 1].y) / 2;
+      ctx.quadraticCurveTo(pts[i].x, pts[i].y, midX, midY);
+    }
+    const last = pts[pts.length - 1];
+    const prev = pts[pts.length - 2];
+    ctx.quadraticCurveTo(prev.x, prev.y, last.x, last.y);
+
+    ctx.lineWidth = style.width;
+    ctx.strokeStyle = style.color;
+    ctx.globalAlpha = style.alpha;
+    ctx.setLineDash(style.dash || []);
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.globalAlpha = 1;
+  }
+
+  _draw(tNow) {
+    if (!this._map) return;
+
+    const ctx = this._ctx;
+    const size = this._map.getSize();
+    ctx.clearRect(0, 0, size.x, size.y);
+
+    const dt = (tNow - this._t0) / 1000;
+    const isNight = this._isNight;
+
+    const lineRGB = isNight ? this.opts.nightLine : this.opts.dayLine;
+    const glowRGB = isNight ? this.opts.nightGlow : this.opts.dayGlow;
+    const lineWidth = isNight ? this.opts.lineWidthNight : this.opts.lineWidthDay;
+    const glowWidth = isNight ? this.opts.glowWidthNight : this.opts.glowWidthDay;
+    const dash = isNight ? this.opts.dashNight : this.opts.dashDay;
+
+    for (let r = 0; r < this.routes.length; r++) {
+      const route = this.routes[r];
+      const pts = this._getPixelPath(route);
+
+      this._drawPath(ctx, pts, {
+        width: glowWidth,
+        color: rgba(glowRGB, 0.15),
+        alpha: 1,
+        dash: []
+      });
+
+      this._drawPath(ctx, pts, {
+        width: lineWidth,
+        color: rgba(lineRGB, isNight ? 0.42 : 0.30),
+        alpha: 1,
+        dash
+      });
+
+      const shipCount = 3;
+      for (let s = 0; s < shipCount; s++) {
+        const t = (dt * this.opts.shipSpeed + (r * 0.17) + (s / shipCount)) % 1;
+        const p = sampleAlongPixelPath(pts, t);
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, this.opts.shipRadius, 0, Math.PI * 2);
+        ctx.fillStyle = isNight ? "rgba(235,245,255,0.92)" : "rgba(255,250,245,0.82)";
+        ctx.shadowBlur = isNight ? 10 : 4;
+        ctx.shadowColor = isNight ? "rgba(170,220,255,0.7)" : "rgba(80,60,35,0.25)";
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      }
+    }
+  }
+}
+
+function buildShippingCorridorsLayer(map, isNight = false) {
+  const layer = L.layerGroup();
+
+  const canvasLayer = new AnimatedSeaRoutesLayer(MAJOR_SHIPPING_CORRIDORS);
+  canvasLayer.setMode(isNight);
+  layer.addLayer(canvasLayer);
+
+  const labels = [];
+  for (const corridor of MAJOR_SHIPPING_CORRIDORS) {
+    labels.push(makeTextMarker(makeShippingLabelHTML(corridor.name), corridor.label));
   }
 
   let showLabels = false;
 
   function refreshLabels() {
-    for (const item of items) {
+    for (const label of labels) {
       if (showLabels) {
-        if (!layer.hasLayer(item.label)) layer.addLayer(item.label);
-      } else if (layer.hasLayer(item.label)) {
-        layer.removeLayer(item.label);
+        if (!layer.hasLayer(label)) layer.addLayer(label);
+      } else if (layer.hasLayer(label)) {
+        layer.removeLayer(label);
       }
     }
   }
 
   layer.setMode = function setMode(night) {
-    const s = styleSet(night);
-    for (const item of items) {
-      item.halo.setStyle(s.halo);
-      item.main.setStyle(s.main);
-    }
+    canvasLayer.setMode(night);
   };
 
   layer.setLabelVisibility = function setLabelVisibility(flag) {
@@ -539,29 +721,259 @@ function buildShippingLinksLayer(isNight = false) {
   return layer;
 }
 
+/* =========================================================
+   SECONDARY SEA LINKS WITH MOTION
+   ========================================================= */
+
+class AnimatedSecondaryLinksLayer extends L.Layer {
+  constructor(routes, opts = {}) {
+    super();
+    this.routes = routes || [];
+    this.opts = Object.assign({
+      dayLine: "70,55,35",
+      nightLine: "210,235,255",
+      lineWidth: 1.25,
+      dashDay: [3, 8],
+      dashNight: [3, 8],
+      alphaDay: 0.16,
+      alphaNight: 0.18,
+      dotRadius: 1.7,
+      dotSpeed: 0.022
+    }, opts);
+
+    this._isNight = false;
+    this._frame = null;
+    this._t0 = performance.now();
+  }
+
+  setMode(isNight) {
+    this._isNight = !!isNight;
+  }
+
+  onAdd(map) {
+    this._map = map;
+    this._canvas = L.DomUtil.create("canvas", "leaflet-zoom-animated");
+    this._ctx = this._canvas.getContext("2d");
+    map.getPane("overlayPane").appendChild(this._canvas);
+    map.on("move zoom resize", this._reset, this);
+    this._reset();
+    this._animate();
+  }
+
+  onRemove(map) {
+    map.getPane("overlayPane").removeChild(this._canvas);
+    map.off("move zoom resize", this._reset, this);
+    cancelAnimationFrame(this._frame);
+    this._frame = null;
+    this._map = null;
+  }
+
+  _reset() {
+    const size = this._map.getSize();
+    const dpr = window.devicePixelRatio || 1;
+    this._canvas.width = Math.round(size.x * dpr);
+    this._canvas.height = Math.round(size.y * dpr);
+    this._canvas.style.width = `${size.x}px`;
+    this._canvas.style.height = `${size.y}px`;
+    this._ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    this._draw(performance.now());
+  }
+
+  _animate() {
+    const tick = (t) => {
+      this._draw(t);
+      this._frame = requestAnimationFrame(tick);
+    };
+    this._frame = requestAnimationFrame(tick);
+  }
+
+  _drawSimplePath(ctx, pts) {
+    if (pts.length < 2) return;
+    ctx.beginPath();
+    ctx.moveTo(pts[0].x, pts[0].y);
+    for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+    ctx.stroke();
+  }
+
+  _draw(tNow) {
+    if (!this._map) return;
+
+    const ctx = this._ctx;
+    const size = this._map.getSize();
+    ctx.clearRect(0, 0, size.x, size.y);
+
+    const dt = (tNow - this._t0) / 1000;
+    const isNight = this._isNight;
+
+    const rgb = isNight ? this.opts.nightLine : this.opts.dayLine;
+    const dash = isNight ? this.opts.dashNight : this.opts.dashDay;
+    const alpha = isNight ? this.opts.alphaNight : this.opts.alphaDay;
+
+    for (let r = 0; r < this.routes.length; r++) {
+      const pts = this.routes[r].coords.map(ll => this._map.latLngToLayerPoint(ll));
+
+      ctx.strokeStyle = rgba(rgb, alpha);
+      ctx.lineWidth = this.opts.lineWidth;
+      ctx.setLineDash(dash);
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+      this._drawSimplePath(ctx, pts);
+      ctx.setLineDash([]);
+
+      const t = (dt * this.opts.dotSpeed + r * 0.11) % 1;
+      const p = sampleAlongPixelPath(pts, t);
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, this.opts.dotRadius, 0, Math.PI * 2);
+      ctx.fillStyle = isNight ? "rgba(235,245,255,0.64)" : "rgba(255,250,245,0.52)";
+      ctx.fill();
+    }
+  }
+}
+
+function buildSecondarySeaLinks(map, isNight = false) {
+  const layer = L.layerGroup();
+  const canvasLayer = new AnimatedSecondaryLinksLayer(SECONDARY_SEA_LINKS);
+  canvasLayer.setMode(isNight);
+  layer.addLayer(canvasLayer);
+
+  layer.setMode = function setMode(night) {
+    canvasLayer.setMode(night);
+  };
+
+  return layer;
+}
+
+/* =========================================================
+   FISHING HATCH CANVAS LAYER
+   ========================================================= */
+
+class FishingHatchLayer extends L.Layer {
+  constructor(grounds, opts = {}) {
+    super();
+    this.grounds = grounds || [];
+    this.opts = Object.assign({
+      dayStroke: "rgba(70,55,35,0.18)",
+      nightStroke: "rgba(150,220,255,0.24)",
+      dayDot: "rgba(70,55,35,0.10)",
+      nightDot: "rgba(170,105,255,0.12)",
+      spacing: 12,
+      lineWidth: 1
+    }, opts);
+    this._isNight = false;
+  }
+
+  setMode(isNight) {
+    this._isNight = !!isNight;
+    this._draw();
+  }
+
+  onAdd(map) {
+    this._map = map;
+    this._canvas = L.DomUtil.create("canvas", "leaflet-zoom-animated");
+    this._ctx = this._canvas.getContext("2d");
+    map.getPane("overlayPane").appendChild(this._canvas);
+    map.on("move zoom resize", this._reset, this);
+    this._reset();
+  }
+
+  onRemove(map) {
+    map.getPane("overlayPane").removeChild(this._canvas);
+    map.off("move zoom resize", this._reset, this);
+    this._map = null;
+  }
+
+  _reset() {
+    const size = this._map.getSize();
+    const dpr = window.devicePixelRatio || 1;
+    this._canvas.width = Math.round(size.x * dpr);
+    this._canvas.height = Math.round(size.y * dpr);
+    this._canvas.style.width = `${size.x}px`;
+    this._canvas.style.height = `${size.y}px`;
+    this._ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    this._draw();
+  }
+
+  _drawPolygonPath(ctx, polygon) {
+    if (!polygon.length) return;
+    const first = this._map.latLngToLayerPoint(polygon[0]);
+    ctx.beginPath();
+    ctx.moveTo(first.x, first.y);
+    for (let i = 1; i < polygon.length; i++) {
+      const p = this._map.latLngToLayerPoint(polygon[i]);
+      ctx.lineTo(p.x, p.y);
+    }
+    ctx.closePath();
+  }
+
+  _draw() {
+    if (!this._map) return;
+
+    const ctx = this._ctx;
+    const size = this._map.getSize();
+    ctx.clearRect(0, 0, size.x, size.y);
+
+    const lineColor = this._isNight ? this.opts.nightStroke : this.opts.dayStroke;
+    const dotColor = this._isNight ? this.opts.nightDot : this.opts.dayDot;
+    const spacing = this.opts.spacing;
+
+    for (const g of this.grounds) {
+      ctx.save();
+      this._drawPolygonPath(ctx, g.polygon);
+      ctx.clip();
+
+      ctx.strokeStyle = lineColor;
+      ctx.lineWidth = this.opts.lineWidth;
+
+      for (let x = -size.y; x < size.x + size.y; x += spacing) {
+        ctx.beginPath();
+        ctx.moveTo(x, size.y + 20);
+        ctx.lineTo(x + size.y, -20);
+        ctx.stroke();
+      }
+
+      ctx.fillStyle = dotColor;
+      for (let y = 0; y < size.y + spacing; y += spacing * 1.2) {
+        for (let x = 0; x < size.x + spacing; x += spacing * 1.2) {
+          ctx.beginPath();
+          ctx.arc(x + 2, y + 2, 0.9, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+
+      ctx.restore();
+    }
+  }
+}
+
+/* =========================================================
+   FISHING GROUNDS
+   ========================================================= */
+
 function buildFishingGroundsLayer(isNight = false) {
   const layer = L.layerGroup();
   const polys = [];
   const labels = [];
-  const hatchUrl = makeHatchPattern(isNight);
 
   function styleSet(night) {
     return {
-      color: night ? "rgba(170,105,255,0.45)" : "rgba(70,55,35,0.35)",
-      weight: 1.4,
-      opacity: 0.95,
-      fillColor: night ? "rgba(110,200,255,0.10)" : "rgba(90,120,160,0.09)",
-      fillOpacity: night ? 0.18 : 0.14
+      color: night ? "rgba(170,105,255,0.42)" : "rgba(70,55,35,0.30)",
+      weight: 1.5,
+      opacity: 1,
+      fillColor: night ? "rgba(110,200,255,0.08)" : "rgba(90,120,160,0.07)",
+      fillOpacity: night ? 0.14 : 0.10
     };
   }
 
-  const style = styleSet(isNight);
+  const s = styleSet(isNight);
 
   for (const ground of FISHING_GROUNDS) {
     const poly = L.polygon(ground.polygon, {
-      ...style,
+      ...s,
       interactive: false
     });
+
+    const label = makeTextMarker(makeFishingLabelHTML(ground.name), ground.label);
 
     poly.bindPopup(`
       <div style="font-weight:800; margin-bottom:6px;">${escapeHTML(ground.name)}</div>
@@ -570,20 +982,14 @@ function buildFishingGroundsLayer(isNight = false) {
       </div>
     `);
 
-    const hatchBounds = L.latLngBounds(ground.polygon);
-    const hatch = L.imageOverlay(hatchUrl, hatchBounds, {
-      opacity: isNight ? 0.42 : 0.32,
-      interactive: false
-    });
-
-    const label = makeTextMarker(fishingLabelHTML(ground.name), ground.label);
-
     layer.addLayer(poly);
-    layer.addLayer(hatch);
-
-    polys.push({ poly, hatch, polygon: ground.polygon });
+    polys.push(poly);
     labels.push(label);
   }
+
+  const hatchLayer = new FishingHatchLayer(FISHING_GROUNDS);
+  hatchLayer.setMode(isNight);
+  layer.addLayer(hatchLayer);
 
   let showLabels = true;
 
@@ -598,13 +1004,9 @@ function buildFishingGroundsLayer(isNight = false) {
   }
 
   layer.setMode = function setMode(night) {
-    const s = styleSet(night);
-    const newHatch = makeHatchPattern(night);
-    for (const item of polys) {
-      item.poly.setStyle(s);
-      item.hatch.setOpacity(night ? 0.42 : 0.32);
-      item.hatch.setUrl(newHatch);
-    }
+    const ns = styleSet(night);
+    for (const poly of polys) poly.setStyle(ns);
+    hatchLayer.setMode(night);
   };
 
   layer.setLabelVisibility = function setLabelVisibility(flag) {
@@ -615,6 +1017,10 @@ function buildFishingGroundsLayer(isNight = false) {
   layer.setLabelVisibility(true);
   return layer;
 }
+
+/* =========================================================
+   OTHER LAYERS
+   ========================================================= */
 
 class GlowDotsLayer extends L.Layer {
   constructor(points, opts = {}) {
@@ -1088,6 +1494,10 @@ function buildHistoricPortsLayer() {
   return layer;
 }
 
+/* =========================================================
+   INIT
+   ========================================================= */
+
 (async function init() {
   try {
     const map = L.map("map", { zoomControl: true }).setView([23.7, 121.0], 7.8);
@@ -1100,7 +1510,7 @@ function buildHistoricPortsLayer() {
     artWrap.innerHTML = `<div class="seaTint"></div><div class="waves"></div><div class="bathyDay"></div>`;
 
     const watercolor = L.tileLayer(
-      "https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg?api_key=ad2dff62-b9ab-4b60-a9ef-d91c975567ca",
+      "https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg",
       {
         maxZoom: 16,
         attribution: "&copy; Stadia Maps &copy; Stamen Design &copy; OpenStreetMap contributors"
@@ -1170,6 +1580,7 @@ function buildHistoricPortsLayer() {
     map.on("moveend zoomend", syncInset);
 
     let shippingLayer = null;
+    let secondarySeaLinksLayer = null;
     let fishingGroundsLayer = null;
     let beamsLayer = null;
     let historicPortsLayer = null;
@@ -1189,6 +1600,7 @@ function buildHistoricPortsLayer() {
       if (waves) waves.style.opacity = isNight ? "0.18" : "0.15";
 
       if (shippingLayer?.setMode) shippingLayer.setMode(isNight);
+      if (secondarySeaLinksLayer?.setMode) secondarySeaLinksLayer.setMode(isNight);
       if (fishingGroundsLayer?.setMode) fishingGroundsLayer.setMode(isNight);
       if (beamsLayer) beamsLayer.setMode(isNight);
 
@@ -1424,7 +1836,9 @@ function buildHistoricPortsLayer() {
       twinkleSpeed: 1.12
     }).addTo(map);
 
-    shippingLayer = buildShippingLinksLayer(isNightLayerActive()).addTo(map);
+    shippingLayer = buildShippingCorridorsLayer(map, isNightLayerActive()).addTo(map);
+    secondarySeaLinksLayer = buildSecondarySeaLinks(map, isNightLayerActive()).addTo(map);
+
     beamsLayer = new BeaconBeamsLayer(beamPts);
     beamsLayer.setMode(isNightLayerActive());
     beamsLayer.addTo(map);
@@ -1520,7 +1934,7 @@ function buildHistoricPortsLayer() {
 
     function syncRouteLabels() {
       const z = map.getZoom();
-      shippingLayer?.setLabelVisibility(z >= 8.6);
+      shippingLayer?.setLabelVisibility(z >= 8.4);
       fishingGroundsLayer?.setLabelVisibility(z >= 8.8);
     }
 
@@ -1604,7 +2018,8 @@ function buildHistoricPortsLayer() {
     const overlays = {
       "Beacon beams": beamsLayer,
       "Glow particles": glowLayer,
-      "Shipping links": shippingLayer,
+      "Shipping corridors": shippingLayer,
+      "Secondary sea links": secondarySeaLinksLayer,
       "Fishing grounds": fishingGroundsLayer,
       "Historical ports": historicPortsLayer,
       "Nautical symbols": symbolsLayer,
@@ -1636,7 +2051,7 @@ function buildHistoricPortsLayer() {
       syncRouteLabels();
     }, 250);
 
-    setStatus(`Ready: ${markerEntries.length} lighthouse points loaded with port links and optional fishing grounds.`);
+    setStatus(`Ready: ${markerEntries.length} lighthouse points loaded with animated shipping corridors, ferry links, and clipped fishing grounds.`);
   } catch (err) {
     console.error(err);
     setStatus(
@@ -1644,5 +2059,4 @@ function buildHistoricPortsLayer() {
       true
     );
   }
-
 })();

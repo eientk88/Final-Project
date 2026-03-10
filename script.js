@@ -1,6 +1,7 @@
 /* =========================================================
    LIGHTHOUSE JS SCRIPT
    ========================================================= */
+
 const GEOJSON_FILES = [{ key: "taiwan", url: "./js/taiwan.geojson" }];
 const CACHE_KEY = "tw_lighthouses_historical_sidebar_v9_ferry_motion_clipped_hatch";
 const CACHE_TTL_MS = 14 * 24 * 60 * 60 * 1000;
@@ -2063,5 +2064,6 @@ function buildHistoricPortsLayer() {
     );
   }
 })();
+
 
 

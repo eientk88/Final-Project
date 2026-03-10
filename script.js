@@ -730,14 +730,14 @@ class AnimatedSecondaryLinksLayer extends L.Layer {
     super();
     this.routes = routes || [];
     this.opts = Object.assign({
-      dayLine: "70,55,35",
+      dayLine: "55,40,35",
       nightLine: "210,235,255",
-      lineWidth: 1.25,
-      dashDay: [3, 8],
-      dashNight: [3, 8],
-      alphaDay: 0.16,
-      alphaNight: 0.18,
-      dotRadius: 1.7,
+      lineWidth: 2.0,
+      dashDay: [5, 5],
+      dashNight: [5, 5],
+      alphaDay: 0.28,
+      alphaNight: 0.32,
+      dotRadius: 2.5,
       dotSpeed: 0.022
     }, opts);
 
@@ -2060,3 +2060,4 @@ function buildHistoricPortsLayer() {
     );
   }
 })();
+
